@@ -1,0 +1,1096 @@
+/* =========================================================
+   SERVICE MANAGEMENT
+   Professional Dark Admin UI
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.services-admin-page {
+    width: 100%;
+    min-height: 100%;
+    color: #e8edf7;
+}
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.services-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.services-page-label {
+    display: block;
+    color: #22d3ee;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.services-page-header h1 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #f1f5f9;
+}
+
+.services-page-header p {
+    margin: 9px 0 0;
+    color: #707c90;
+    font-size: 13px;
+}
+
+.service-add-btn {
+    min-width: 145px;
+    height: 45px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        135deg,
+        #22d3ee,
+        #67e8f9
+    );
+    color: #061017;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition: .25s ease;
+    box-shadow: 0 8px 25px rgba(34, 211, 238, .08);
+}
+
+.service-add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(34, 211, 238, .18);
+}
+
+.service-add-btn span {
+    font-size: 19px;
+    line-height: 1;
+}
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.service-alert {
+    width: 100%;
+    padding: 13px 16px;
+    margin-bottom: 18px;
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.service-alert-error {
+    color: #f87171;
+    background: rgba(239, 68, 68, .07);
+    border: 1px solid rgba(239, 68, 68, .15);
+}
+
+.service-alert-success {
+    color: #4ade80;
+    background: rgba(34, 197, 94, .07);
+    border: 1px solid rgba(34, 197, 94, .15);
+}
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.service-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.service-stat-card {
+    min-height: 105px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #0e131d;
+    border: 1px solid rgba(255, 255, 255, .055);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: .25s ease;
+}
+
+.service-stat-card:hover {
+    border-color: rgba(34, 211, 238, .16);
+    transform: translateY(-2px);
+}
+
+.service-stat-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.service-stat-icon.cyan {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, .09);
+}
+
+.service-stat-icon.green {
+    color: #4ade80;
+    background: rgba(34, 197, 94, .09);
+}
+
+.service-stat-icon.purple {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, .10);
+}
+
+.service-stat-icon.orange {
+    color: #fb923c;
+    background: rgba(249, 115, 22, .09);
+}
+
+.service-stat-card span {
+    display: block;
+    color: #657084;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+.service-stat-card strong {
+    display: block;
+    margin-top: 5px;
+    color: #edf2f8;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.service-admin-card {
+    width: 100%;
+    background: #0e131d;
+    border: 1px solid rgba(255, 255, 255, .055);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.service-table-header {
+    min-height: 82px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .055);
+}
+
+.service-table-header > div:first-child span {
+    display: block;
+    color: #22d3ee;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.service-table-header h2 {
+    margin: 5px 0 0;
+    color: #e8edf7;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.service-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-filters input,
+.service-filters select {
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    color: #dce4ef;
+    background: #090d15;
+    border: 1px solid rgba(255, 255, 255, .07);
+    font-size: 11px;
+    transition: .2s ease;
+}
+
+.service-filters input {
+    width: 230px;
+    padding: 0 12px;
+}
+
+.service-filters select {
+    width: 140px;
+    padding: 0 10px;
+}
+
+.service-filters input::placeholder {
+    color: #4e596b;
+}
+
+.service-filters input:focus,
+.service-filters select:focus {
+    border-color: rgba(34, 211, 238, .5);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, .05);
+}
+
+.service-refresh-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    background: #151b27;
+    color: #8d98aa;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .25s ease;
+}
+
+.service-refresh-btn:hover {
+    color: #22d3ee;
+    border-color: rgba(34, 211, 238, .35);
+    transform: rotate(90deg);
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.service-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #263141 #0b1018;
+}
+
+.service-table-wrapper::-webkit-scrollbar {
+    height: 7px;
+}
+
+.service-table-wrapper::-webkit-scrollbar-track {
+    background: #0b1018;
+}
+
+.service-table-wrapper::-webkit-scrollbar-thumb {
+    background: #263141;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.services-table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+}
+
+.services-table th {
+    height: 48px;
+    padding: 0 18px;
+    background: #0b1018;
+    color: #596477;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+    font-weight: 800;
+}
+
+.services-table td {
+    padding: 14px 18px;
+    border-top: 1px solid rgba(255, 255, 255, .045);
+    color: #8994a6;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.services-table tbody tr {
+    transition: .2s ease;
+}
+
+.services-table tbody tr:hover {
+    background: rgba(255, 255, 255, .018);
+}
+
+.service-number {
+    width: 50px;
+    color: #596477 !important;
+    font-size: 10px !important;
+}
+
+/* =========================================================
+   TABLE SERVICE
+========================================================= */
+
+.table-service {
+    min-width: 240px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.table-service-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    border: 1px solid rgba(255, 255, 255, .05);
+}
+
+.table-service-icon.service-cyan {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, .09);
+}
+
+.table-service-icon.service-purple {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, .10);
+}
+
+.table-service-icon.service-pink {
+    color: #f472b6;
+    background: rgba(236, 72, 153, .09);
+}
+
+.table-service-icon.service-green {
+    color: #4ade80;
+    background: rgba(34, 197, 94, .09);
+}
+
+.table-service strong {
+    display: block;
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #e8edf7;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.table-service small {
+    display: block;
+    max-width: 210px;
+    margin-top: 4px;
+    color: #596477;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 8px;
+}
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.service-category {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: #929cad;
+    background: #151b26;
+    border: 1px solid rgba(255, 255, 255, .05);
+    white-space: nowrap;
+    font-size: 9px;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    max-width: 220px;
+}
+
+.service-features span {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 5px;
+    color: #718092;
+    background: rgba(34, 211, 238, .05);
+    border: 1px solid rgba(34, 211, 238, .05);
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.service-price {
+    color: #b5c0d0;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.service-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.service-status i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.service-status-new {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, .08);
+}
+
+.service-status-featured {
+    color: #a78bfa;
+    background: rgba(139, 92, 246, .08);
+}
+
+.service-status-active {
+    color: #4ade80;
+    background: rgba(34, 197, 94, .08);
+}
+
+.service-status-inactive {
+    color: #f87171;
+    background: rgba(239, 68, 68, .08);
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.service-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-edit-btn,
+.service-delete-btn {
+    height: 29px;
+    padding: 0 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 8px;
+    transition: .2s ease;
+}
+
+.service-edit-btn {
+    color: #22d3ee;
+    background: rgba(34, 211, 238, .06);
+    border: 1px solid rgba(34, 211, 238, .12);
+}
+
+.service-edit-btn:hover {
+    background: rgba(34, 211, 238, .13);
+    border-color: rgba(34, 211, 238, .3);
+}
+
+.service-delete-btn {
+    color: #f87171;
+    background: rgba(239, 68, 68, .06);
+    border: 1px solid rgba(239, 68, 68, .12);
+}
+
+.service-delete-btn:hover {
+    background: rgba(239, 68, 68, .14);
+    border-color: rgba(239, 68, 68, .28);
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.service-loading {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    color: #667286;
+    font-size: 11px;
+}
+
+.service-spinner {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, .07);
+    border-top-color: #22d3ee;
+    animation: serviceSpin .8s linear infinite;
+}
+
+@keyframes serviceSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.service-empty {
+    height: 280px;
+    text-align: center !important;
+}
+
+.service-empty > div {
+    margin-bottom: 10px;
+    color: #22d3ee;
+    font-size: 30px;
+}
+
+.service-empty strong {
+    display: block;
+    color: #aeb8c8;
+    font-size: 13px;
+}
+
+.service-empty span {
+    display: block;
+    margin-top: 5px;
+    color: #596477;
+    font-size: 10px;
+}
+
+.service-empty button {
+    height: 35px;
+    margin-top: 15px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 7px;
+    background: #22d3ee;
+    color: #061017;
+    font-size: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* =========================================================
+   MODAL OVERLAY
+========================================================= */
+
+.service-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .72);
+    backdrop-filter: blur(7px);
+    animation: serviceFadeIn .2s ease;
+}
+
+@keyframes serviceFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.service-modal {
+    width: 100%;
+    max-width: 850px;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+    background: #0e131d;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 17px;
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, .55),
+        0 0 60px rgba(34, 211, 238, .035);
+    animation: serviceModalIn .25s ease;
+}
+
+.service-modal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.service-modal::-webkit-scrollbar-track {
+    background: #090d15;
+}
+
+.service-modal::-webkit-scrollbar-thumb {
+    background: #273243;
+    border-radius: 10px;
+}
+
+@keyframes serviceModalIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.service-modal-header {
+    min-height: 82px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.service-modal-header span {
+    color: #22d3ee;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.service-modal-header h2 {
+    margin: 5px 0 0;
+    color: #edf2f8;
+    font-size: 19px;
+}
+
+.service-modal-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    background: #151b27;
+    color: #8792a4;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.service-modal-close:hover {
+    color: #fff;
+    background: #1b2330;
+    border-color: rgba(255, 255, 255, .14);
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.service-form {
+    padding: 24px;
+}
+
+.service-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.service-form-group {
+    min-width: 0;
+}
+
+.service-form-group.service-full {
+    grid-column: 1 / -1;
+}
+
+.service-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #aeb7c6;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.service-form-group input,
+.service-form-group select,
+.service-form-group textarea {
+    width: 100%;
+    outline: none;
+    color: #e8edf7;
+    background: #090d15;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 11px;
+    transition: .2s ease;
+}
+
+.service-form-group input,
+.service-form-group select {
+    height: 45px;
+    padding: 0 13px;
+}
+
+.service-form-group textarea {
+    min-height: 115px;
+    padding: 12px 13px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.service-form-group input::placeholder,
+.service-form-group textarea::placeholder {
+    color: #4f5b6d;
+}
+
+.service-form-group input:focus,
+.service-form-group select:focus,
+.service-form-group textarea:focus {
+    border-color: rgba(34, 211, 238, .58);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, .055);
+}
+
+.service-form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #596477;
+    font-size: 9px;
+}
+
+/* =========================================================
+   FORM FOOTER
+========================================================= */
+
+.service-form-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .055);
+}
+
+.service-cancel-btn,
+.service-save-btn {
+    height: 43px;
+    padding: 0 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 800;
+    transition: .2s ease;
+}
+
+.service-cancel-btn {
+    color: #8b96a8;
+    background: #151b27;
+    border: 1px solid rgba(255, 255, 255, .07);
+}
+
+.service-cancel-btn:hover {
+    color: #fff;
+    background: #1b2330;
+}
+
+.service-save-btn {
+    min-width: 145px;
+    color: #061017;
+    background: linear-gradient(
+        135deg,
+        #22d3ee,
+        #67e8f9
+    );
+    border: 0;
+}
+
+.service-save-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, .16);
+}
+
+.service-save-btn:disabled,
+.service-cancel-btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =========================================================
+   RESPONSIVE — 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .service-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-filters input {
+        width: 190px;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — 950px
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .services-page-header {
+        align-items: flex-start;
+    }
+
+    .service-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .service-filters {
+        width: 100%;
+    }
+
+    .service-filters input {
+        flex: 1;
+        width: auto;
+    }
+
+    .service-filters select {
+        width: 150px;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .services-page-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .services-page-header h1 {
+        font-size: 29px;
+    }
+
+    .service-add-btn {
+        width: 100%;
+    }
+
+    .service-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .service-stat-card {
+        padding: 16px;
+    }
+
+    .service-stat-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .service-stat-card strong {
+        font-size: 22px;
+    }
+
+    .service-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-form-group.service-full {
+        grid-column: auto;
+    }
+
+    .service-modal-overlay {
+        padding: 15px;
+    }
+
+    .service-modal {
+        max-height: calc(100vh - 30px);
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .services-page-header {
+        margin-bottom: 20px;
+    }
+
+    .services-page-header h1 {
+        font-size: 26px;
+    }
+
+    .services-page-header p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .service-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-stat-card {
+        min-height: 85px;
+    }
+
+    .service-table-header {
+        padding: 17px;
+    }
+
+    .service-filters {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service-filters input,
+    .service-filters select,
+    .service-refresh-btn {
+        width: 100%;
+    }
+
+    .service-form {
+        padding: 18px;
+    }
+
+    .service-modal-header {
+        padding: 17px;
+    }
+
+    .service-modal-header h2 {
+        font-size: 17px;
+    }
+
+    .service-form-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .service-cancel-btn,
+    .service-save-btn {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — 420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .services-page-label {
+        font-size: 8px;
+    }
+
+    .services-page-header h1 {
+        font-size: 24px;
+    }
+
+    .service-stat-card {
+        padding: 14px;
+    }
+
+    .service-stat-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+    }
+
+    .service-stat-card span {
+        font-size: 7px;
+    }
+
+    .service-stat-card strong {
+        font-size: 20px;
+    }
+
+    .service-modal-overlay {
+        padding: 8px;
+    }
+
+    .service-modal {
+        border-radius: 13px;
+    }
+
+    .service-modal-header {
+        min-height: 70px;
+    }
+
+    .service-form-group input,
+    .service-form-group select {
+        height: 43px;
+    }
+
+}

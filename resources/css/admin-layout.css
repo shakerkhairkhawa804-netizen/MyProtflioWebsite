@@ -1,0 +1,779 @@
+/* =========================================================
+   ADMIN LAYOUT
+   Professional LTR / RTL
+   English = LTR
+   Pashto / Dari = RTL
+========================================================= */
+
+:root {
+    --sidebar-width: 260px;
+    --main-padding: 25px;
+    --layout-bg: #f5f7fb;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ADMIN LAYOUT
+========================================================= */
+
+.admin-layout {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    position: relative;
+
+    background: var(--layout-bg);
+
+    overflow-x: hidden;
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   LTR LAYOUT
+========================================================= */
+
+.admin-layout.ltr-layout {
+    direction: ltr;
+}
+
+
+/* Sidebar on LEFT */
+.admin-layout.ltr-layout .dashboard-sidebar {
+    left: 0;
+    right: auto;
+}
+
+
+/* Main content after LEFT sidebar */
+.admin-layout.ltr-layout .admin-content {
+    margin-left: var(--sidebar-width);
+    margin-right: 0;
+}
+
+
+/* =========================================================
+   RTL LAYOUT
+========================================================= */
+
+.admin-layout.rtl-layout {
+    direction: rtl;
+}
+
+
+/* Sidebar on RIGHT */
+.admin-layout.rtl-layout .dashboard-sidebar {
+    right: 0;
+    left: auto;
+}
+
+
+/* Main content before RIGHT sidebar */
+.admin-layout.rtl-layout .admin-content {
+    margin-right: var(--sidebar-width);
+    margin-left: 0;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.dashboard-sidebar {
+    width: var(--sidebar-width);
+
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+
+    z-index: 1000;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ADMIN CONTENT
+========================================================= */
+
+.admin-content {
+    /*
+       IMPORTANT:
+       Do NOT use:
+
+       width: calc(100% - 260px);
+
+       because the sidebar space is already created
+       by margin-left / margin-right.
+    */
+
+    flex: 1 1 auto;
+
+    width: auto;
+
+    min-width: 0;
+
+    max-width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    transition:
+        margin-left 0.25s ease,
+        margin-right 0.25s ease;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.admin-main {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    min-height: 0;
+
+    flex: 1 1 auto;
+
+    padding: var(--main-padding);
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    direction: inherit;
+
+    text-align: start;
+}
+
+
+/* =========================================================
+   LTR MAIN
+========================================================= */
+
+.admin-layout.ltr-layout .admin-main {
+    direction: ltr;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   RTL MAIN
+========================================================= */
+
+.admin-layout.rtl-layout .admin-main {
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   DIRECT CHILDREN
+========================================================= */
+
+.admin-main > * {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.admin-main .container,
+.admin-main .container-fluid {
+    width: 100%;
+
+    max-width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* =========================================================
+   BOOTSTRAP ROW
+========================================================= */
+
+.admin-main .row {
+    width: 100%;
+
+    max-width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* =========================================================
+   BOOTSTRAP COLUMNS
+========================================================= */
+
+.admin-main [class*="col-"] {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.admin-main .card {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.admin-main table {
+    width: 100%;
+
+    max-width: 100%;
+}
+
+.admin-main .table-responsive {
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================================
+   LTR TABLE
+========================================================= */
+
+.admin-layout.ltr-layout .admin-main table {
+    direction: ltr;
+}
+
+
+/* =========================================================
+   RTL TABLE
+========================================================= */
+
+.admin-layout.rtl-layout .admin-main table {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+.admin-main img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* =========================================================
+   VIDEOS / IFRAMES
+========================================================= */
+
+.admin-main video,
+.admin-main iframe {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.admin-main h1,
+.admin-main h2,
+.admin-main h3,
+.admin-main h4,
+.admin-main h5,
+.admin-main h6,
+.admin-main p,
+.admin-main span {
+    max-width: 100%;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   LTR FORM ELEMENTS
+========================================================= */
+
+.admin-layout.ltr-layout .admin-main input,
+.admin-layout.ltr-layout .admin-main textarea,
+.admin-layout.ltr-layout .admin-main select {
+    direction: ltr;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   RTL FORM ELEMENTS
+========================================================= */
+
+.admin-layout.rtl-layout .admin-main input,
+.admin-layout.rtl-layout .admin-main textarea,
+.admin-layout.rtl-layout .admin-main select {
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   LTR PLACEHOLDER
+========================================================= */
+
+.admin-layout.ltr-layout
+.admin-main input::placeholder,
+.admin-layout.ltr-layout
+.admin-main textarea::placeholder {
+    text-align: left;
+}
+
+
+/* =========================================================
+   RTL PLACEHOLDER
+========================================================= */
+
+.admin-layout.rtl-layout
+.admin-main input::placeholder,
+.admin-layout.rtl-layout
+.admin-main textarea::placeholder {
+    text-align: right;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.admin-layout.ltr-layout .modal {
+    direction: ltr;
+
+    text-align: left;
+}
+
+.admin-layout.rtl-layout .modal {
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   MODAL BODY
+========================================================= */
+
+.admin-layout.ltr-layout .modal-body,
+.admin-layout.ltr-layout .modal-header,
+.admin-layout.ltr-layout .modal-footer {
+    text-align: left;
+}
+
+.admin-layout.rtl-layout .modal-body,
+.admin-layout.rtl-layout .modal-header,
+.admin-layout.rtl-layout .modal-footer {
+    text-align: right;
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.admin-layout.ltr-layout .dropdown-menu {
+    text-align: left;
+}
+
+.admin-layout.rtl-layout .dropdown-menu {
+    text-align: right;
+}
+
+
+/* =========================================================
+   TABLE RESPONSIVE
+========================================================= */
+
+.admin-main .table-responsive {
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        rgba(100, 116, 139, 0.35)
+        transparent;
+}
+
+
+/* =========================================================
+   FLEX ELEMENTS
+========================================================= */
+
+.admin-layout.ltr-layout .admin-main .d-flex {
+    direction: ltr;
+}
+
+.admin-layout.rtl-layout .admin-main .d-flex {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.admin-layout.ltr-layout .pagination {
+    direction: ltr;
+}
+
+.admin-layout.rtl-layout .pagination {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.admin-layout.ltr-layout .alert {
+    direction: ltr;
+
+    text-align: left;
+}
+
+.admin-layout.rtl-layout .alert {
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   FORM CHECK
+========================================================= */
+
+.admin-layout.ltr-layout .form-check {
+    padding-left: 1.5em;
+
+    padding-right: 0;
+}
+
+.admin-layout.rtl-layout .form-check {
+    padding-right: 1.5em;
+
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   SEARCH / FILTER
+========================================================= */
+
+.admin-layout.ltr-layout .search-box,
+.admin-layout.ltr-layout .filter-box {
+    direction: ltr;
+}
+
+.admin-layout.rtl-layout .search-box,
+.admin-layout.rtl-layout .filter-box {
+    direction: rtl;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.admin-main button,
+.admin-main .btn {
+    max-width: 100%;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.admin-main a {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   SIDEBAR + CONTENT DESKTOP
+========================================================= */
+
+@media (min-width: 992px) {
+
+    .admin-content {
+        flex: 1 1 auto;
+
+        min-width: 0;
+    }
+
+    .admin-main {
+        padding: 25px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    /*
+       Sidebar becomes overlay.
+       Main content uses full width.
+    */
+
+    .admin-content {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-left: 0 !important;
+
+        margin-right: 0 !important;
+    }
+
+    .admin-main {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 20px;
+    }
+
+
+    /* LTR sidebar */
+
+    .admin-layout.ltr-layout
+    .dashboard-sidebar {
+        left: 0;
+
+        right: auto;
+    }
+
+
+    /* RTL sidebar */
+
+    .admin-layout.rtl-layout
+    .dashboard-sidebar {
+        right: 0;
+
+        left: auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .admin-main {
+        padding: 15px;
+    }
+
+    .admin-main .container,
+    .admin-main .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .admin-main {
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .admin-main {
+        padding: 10px;
+    }
+}
+
+
+/* =========================================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================================= */
+
+.admin-layout,
+.admin-content,
+.admin-main {
+    max-width: 100vw;
+}
+
+
+/* =========================================================
+   LONG WORD / URL FIX
+========================================================= */
+
+.admin-main {
+    overflow-wrap: break-word;
+
+    word-wrap: break-word;
+}
+
+.admin-main a,
+.admin-main p,
+.admin-main span,
+.admin-main td,
+.admin-main th {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLE SAFETY
+========================================================= */
+
+.admin-main .table-responsive table {
+    min-width: 600px;
+}
+
+
+/* =========================================================
+   RTL BOOTSTRAP SUPPORT
+========================================================= */
+
+.admin-layout.rtl-layout .table {
+    direction: rtl;
+}
+
+.admin-layout.rtl-layout .modal-content {
+    direction: rtl;
+}
+
+.admin-layout.rtl-layout .form-label {
+    text-align: right;
+}
+
+
+/* =========================================================
+   LTR BOOTSTRAP SUPPORT
+========================================================= */
+
+.admin-layout.ltr-layout .table {
+    direction: ltr;
+}
+
+.admin-layout.ltr-layout .modal-content {
+    direction: ltr;
+}
+
+.admin-layout.ltr-layout .form-label {
+    text-align: left;
+}
+
+
+/* =========================================================
+   SMOOTH LAYOUT TRANSITION
+========================================================= */
+
+.admin-content {
+    transition:
+        margin-left 0.25s ease,
+        margin-right 0.25s ease;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.admin-main button:focus-visible,
+.admin-main a:focus-visible,
+.admin-main input:focus-visible,
+.admin-main textarea:focus-visible,
+.admin-main select:focus-visible {
+    outline: 2px solid #38bdf8;
+
+    outline-offset: 2px;
+}

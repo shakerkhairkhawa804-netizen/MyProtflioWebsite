@@ -1,0 +1,738 @@
+/* =====================================================
+   EXPERIENCE PAGE
+===================================================== */
+
+.experience-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.experience-section {
+    width: 100%;
+    padding: 35px 0 60px;
+}
+
+.experience-container {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.experience-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.experience-heading {
+    max-width: 700px;
+}
+
+.experience-subtitle {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.experience-heading h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.experience-heading h1 span {
+    color: #7c3aed;
+}
+
+.experience-heading p {
+    margin: 12px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.add-experience-btn {
+    border: 0;
+    outline: none;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.20);
+    white-space: nowrap;
+}
+
+.add-experience-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(124, 58, 237, 0.28);
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.experience-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.experience-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+.experience-stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #f3e8ff;
+    font-size: 22px;
+}
+
+.experience-stat-card span {
+    display: block;
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.experience-stat-card strong {
+    display: block;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.experience-form-card {
+    margin-bottom: 35px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+    animation: experienceFormIn 0.3s ease;
+}
+
+@keyframes experienceFormIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.experience-form-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+.experience-form-header span {
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.experience-form-header h2 {
+    margin: 6px 0;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.experience-form-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.experience-close-btn {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 9px;
+    background: #f3f4f6;
+    color: #374151;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.experience-close-btn:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.experience-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.experience-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.experience-form-group.full-width {
+    width: 100%;
+}
+
+.experience-form-group label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.experience-form-group input,
+.experience-form-group select,
+.experience-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfe3e8;
+    outline: none;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #111827;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.experience-form-group input,
+.experience-form-group select {
+    height: 46px;
+}
+
+.experience-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.experience-form-group input:focus,
+.experience-form-group select:focus,
+.experience-form-group textarea:focus {
+    background: #ffffff;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
+}
+
+.experience-form-group input:disabled,
+.experience-form-group select:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* =====================================================
+   CURRENT JOB
+===================================================== */
+
+.current-job-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+    padding: 15px 18px;
+    border: 1px solid #ddd6fe;
+    border-radius: 12px;
+    background: #faf5ff;
+}
+
+.current-job-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4c1d95;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.current-job-label input {
+    width: 17px;
+    height: 17px;
+    accent-color: #7c3aed;
+    cursor: pointer;
+}
+
+.current-job-box small {
+    color: #7c3aed;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.experience-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.experience-cancel-btn,
+.experience-save-btn {
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.experience-cancel-btn {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.experience-cancel-btn:hover {
+    background: #e5e7eb;
+}
+
+.experience-save-btn {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+.experience-save-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   EXPERIENCE LIST
+===================================================== */
+
+.experience-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =====================================================
+   EXPERIENCE CARD
+===================================================== */
+
+.experience-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 0;
+    animation: experienceCardIn 0.4s ease both;
+}
+
+@keyframes experienceCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.experience-timeline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-timeline-dot {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.experience-timeline-line {
+    position: absolute;
+    top: 48px;
+    bottom: -25px;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: #ddd6fe;
+}
+
+
+/* =====================================================
+   EXPERIENCE CONTENT
+===================================================== */
+
+.experience-content {
+    min-width: 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06);
+    transition: 0.25s ease;
+}
+
+.experience-content:hover {
+    transform: translateY(-3px);
+    border-color: #ddd6fe;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.experience-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.experience-company {
+    display: block;
+    margin-bottom: 6px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.experience-card-top h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.experience-status {
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.experience-status.current {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.experience-status.completed {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+
+/* =====================================================
+   META
+===================================================== */
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 15px;
+    padding: 13px 0;
+    border-top: 1px solid #f0f1f3;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.experience-meta span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.experience-description {
+    margin: 17px 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CARD FOOTER
+===================================================== */
+
+.experience-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-tags span {
+    padding: 6px 9px;
+    border-radius: 6px;
+    background: #f5f3ff;
+    color: #6d28d9;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.experience-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.experience-edit-btn,
+.experience-delete-btn {
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.experience-edit-btn {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.experience-edit-btn:hover {
+    background: #dbeafe;
+}
+
+.experience-delete-btn {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.experience-delete-btn:hover {
+    background: #fee2e2;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.experience-empty {
+    padding: 60px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed #d1d5db;
+    border-radius: 16px;
+}
+
+.experience-empty-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #f3e8ff;
+    font-size: 30px;
+}
+
+.experience-empty h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.experience-empty p {
+    margin: 0 0 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .experience-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .experience-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .experience-section {
+        padding: 25px 0 40px;
+    }
+
+    .experience-container {
+        width: min(100% - 24px, 1200px);
+    }
+
+    .experience-heading h1 {
+        font-size: 28px;
+    }
+
+    .experience-card {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .experience-timeline-dot {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .experience-timeline-line {
+        top: 38px;
+    }
+
+    .experience-content {
+        padding: 18px;
+    }
+
+    .experience-card-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experience-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .experience-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .experience-actions {
+        width: 100%;
+    }
+
+    .experience-edit-btn,
+    .experience-delete-btn {
+        flex: 1;
+    }
+
+    .experience-form-card {
+        padding: 20px;
+    }
+
+    .current-job-box {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .experience-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .experience-cancel-btn,
+    .experience-save-btn {
+        width: 100%;
+    }
+
+}

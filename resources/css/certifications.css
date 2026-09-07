@@ -1,0 +1,716 @@
+/* =====================================================
+   CERTIFICATIONS PAGE
+===================================================== */
+
+.certifications-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.certifications-section {
+    width: 100%;
+    padding: 35px 0 60px;
+}
+
+.certifications-container {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.certifications-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.certifications-heading {
+    max-width: 700px;
+}
+
+.certifications-subtitle {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.certifications-heading h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.certifications-heading h1 span {
+    color: #7c3aed;
+}
+
+.certifications-heading p {
+    margin: 12px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.add-certification-btn {
+    border: 0;
+    outline: none;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
+    white-space: nowrap;
+}
+
+.add-certification-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(124, 58, 237, 0.3);
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.certification-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.certification-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+    transition: 0.25s ease;
+}
+
+.certification-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.certification-stat-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #f3e8ff;
+    font-size: 23px;
+}
+
+.certification-stat-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.certification-stat-card strong {
+    display: block;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.certification-form-card {
+    margin-bottom: 35px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+    animation: certificationFormIn 0.3s ease;
+}
+
+@keyframes certificationFormIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   FORM HEADER
+===================================================== */
+
+.certification-form-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+.certification-form-header span {
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.certification-form-header h2 {
+    margin: 6px 0;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.certification-form-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.certification-close-btn {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 9px;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.certification-close-btn:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.certification-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certification-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.certification-form-group.full-width {
+    width: 100%;
+}
+
+.certification-form-group label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.certification-form-group input,
+.certification-form-group select,
+.certification-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfe3e8;
+    outline: none;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #111827;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.certification-form-group input,
+.certification-form-group select {
+    height: 46px;
+}
+
+.certification-form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.certification-form-group input:focus,
+.certification-form-group select:focus,
+.certification-form-group textarea:focus {
+    background: #ffffff;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.certification-form-group input:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* =====================================================
+   NO EXPIRATION
+===================================================== */
+
+.no-expiration-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+    padding: 16px 18px;
+    border: 1px solid #ddd6fe;
+    border-radius: 12px;
+    background: #faf5ff;
+}
+
+.no-expiration-box label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4c1d95;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.no-expiration-box input {
+    width: 17px;
+    height: 17px;
+    accent-color: #7c3aed;
+    cursor: pointer;
+}
+
+.no-expiration-box small {
+    color: #7c3aed;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.certification-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.certification-cancel-btn,
+.certification-save-btn {
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.certification-cancel-btn {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.certification-cancel-btn:hover {
+    background: #e5e7eb;
+}
+
+.certification-save-btn {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+.certification-save-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   CERTIFICATIONS GRID
+===================================================== */
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* =====================================================
+   CERTIFICATION CARD
+===================================================== */
+
+.certification-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06);
+    transition: 0.25s ease;
+    animation: certificationCardIn 0.4s ease both;
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    border-color: #ddd6fe;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+}
+
+@keyframes certificationCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.certification-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 22px 22px 0;
+}
+
+.certification-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #f3e8ff,
+        #ede9fe
+    );
+    font-size: 25px;
+}
+
+.certification-status {
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.certification-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.certification-status.expired {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.certification-card-body {
+    flex: 1;
+    padding: 20px 22px;
+}
+
+.certification-organization {
+    display: block;
+    margin-bottom: 6px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.certification-card-body h2 {
+    margin: 0 0 15px;
+    color: #111827;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.certification-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 13px 0;
+    border-top: 1px solid #f0f1f3;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.certification-info span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.credential-id {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 12px;
+    word-break: break-word;
+}
+
+.credential-id strong {
+    color: #374151;
+}
+
+.certification-description {
+    margin: 15px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CARD FOOTER
+===================================================== */
+
+.certification-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px 22px;
+    border-top: 1px solid #eef0f3;
+    background: #fafafa;
+}
+
+.credential-link {
+    color: #7c3aed;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.credential-link:hover {
+    color: #5b21b6;
+    text-decoration: underline;
+}
+
+.no-credential {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.certification-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.certification-edit-btn,
+.certification-delete-btn {
+    border: 0;
+    padding: 8px 11px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.certification-edit-btn {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.certification-edit-btn:hover {
+    background: #dbeafe;
+}
+
+.certification-delete-btn {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.certification-delete-btn:hover {
+    background: #fee2e2;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.certification-empty {
+    padding: 65px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed #d1d5db;
+    border-radius: 17px;
+}
+
+.certification-empty-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #f3e8ff;
+    font-size: 31px;
+}
+
+.certification-empty h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.certification-empty p {
+    margin: 0 0 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .certifications-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .certification-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .certifications-section {
+        padding: 25px 0 40px;
+    }
+
+    .certifications-container {
+        width: min(100% - 24px, 1200px);
+    }
+
+    .certifications-heading h1 {
+        font-size: 28px;
+    }
+
+    .certification-form-card {
+        padding: 20px;
+    }
+
+    .certification-card-top {
+        padding: 18px 18px 0;
+    }
+
+    .certification-card-body {
+        padding: 18px;
+    }
+
+    .certification-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 18px;
+    }
+
+    .certification-actions {
+        width: 100%;
+    }
+
+    .certification-edit-btn,
+    .certification-delete-btn {
+        flex: 1;
+    }
+
+    .no-expiration-box {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .certification-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .certification-cancel-btn,
+    .certification-save-btn {
+        width: 100%;
+    }
+}

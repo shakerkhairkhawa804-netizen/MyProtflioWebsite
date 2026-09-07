@@ -1,0 +1,752 @@
+/* =====================================================
+   EDUCATION PAGE
+===================================================== */
+
+.education-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.education-section {
+    width: 100%;
+    padding: 35px 0 60px;
+}
+
+.education-container {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.education-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.education-heading {
+    max-width: 700px;
+}
+
+.education-subtitle {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.education-heading h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.education-heading h1 span {
+    color: #7c3aed;
+}
+
+.education-heading p {
+    margin: 12px 0 0;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.add-education-btn {
+    border: 0;
+    outline: none;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.20);
+    white-space: nowrap;
+}
+
+.add-education-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(124, 58, 237, 0.28);
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.education-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.education-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    transition: 0.25s ease;
+}
+
+.education-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.education-stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #f3e8ff;
+    font-size: 22px;
+}
+
+.education-stat-card span {
+    display: block;
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.education-stat-card strong {
+    display: block;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.education-form-card {
+    margin-bottom: 35px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+    animation: educationFormIn 0.3s ease;
+}
+
+@keyframes educationFormIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-form-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+.education-form-header span {
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.education-form-header h2 {
+    margin: 6px 0;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.education-form-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.education-close-btn {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 9px;
+    background: #f3f4f6;
+    color: #374151;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.education-close-btn:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.education-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.education-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.education-form-group.full-width {
+    width: 100%;
+}
+
+.education-form-group label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.education-form-group input,
+.education-form-group select,
+.education-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfe3e8;
+    outline: none;
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #111827;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.education-form-group input,
+.education-form-group select {
+    height: 46px;
+}
+
+.education-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.education-form-group input:focus,
+.education-form-group select:focus,
+.education-form-group textarea:focus {
+    background: #ffffff;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
+}
+
+.education-form-group input:disabled,
+.education-form-group select:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* =====================================================
+   CURRENTLY STUDYING
+===================================================== */
+
+.currently-studying-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+    padding: 15px 18px;
+    border: 1px solid #ddd6fe;
+    border-radius: 12px;
+    background: #faf5ff;
+}
+
+.currently-studying-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4c1d95;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.currently-studying-label input {
+    width: 17px;
+    height: 17px;
+    accent-color: #7c3aed;
+    cursor: pointer;
+}
+
+.currently-studying-box small {
+    color: #7c3aed;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.education-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.education-cancel-btn,
+.education-save-btn {
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.education-cancel-btn {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.education-cancel-btn:hover {
+    background: #e5e7eb;
+}
+
+.education-save-btn {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+.education-save-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   EDUCATION LIST
+===================================================== */
+
+.education-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =====================================================
+   EDUCATION CARD
+===================================================== */
+
+.education-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 0;
+    animation: educationCardIn 0.4s ease both;
+}
+
+@keyframes educationCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.education-timeline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.education-timeline-dot {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #ffffff;
+    font-size: 21px;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.education-timeline-line {
+    position: absolute;
+    top: 48px;
+    bottom: -25px;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: #ddd6fe;
+}
+
+
+/* =====================================================
+   EDUCATION CONTENT
+===================================================== */
+
+.education-content {
+    min-width: 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06);
+    transition: 0.25s ease;
+}
+
+.education-content:hover {
+    transform: translateY(-3px);
+    border-color: #ddd6fe;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.education-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.education-institution {
+    display: block;
+    margin-bottom: 6px;
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.education-card-top h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.education-card-top h3 {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.education-status {
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.education-status.current {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.education-status.completed {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+
+/* =====================================================
+   META
+===================================================== */
+
+.education-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 15px;
+    padding: 13px 0;
+    border-top: 1px solid #f0f1f3;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.education-meta span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.education-description {
+    margin: 17px 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CARD FOOTER
+===================================================== */
+
+.education-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.education-tags span {
+    padding: 6px 9px;
+    border-radius: 6px;
+    background: #f5f3ff;
+    color: #6d28d9;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.education-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.education-edit-btn,
+.education-delete-btn {
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.education-edit-btn {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.education-edit-btn:hover {
+    background: #dbeafe;
+}
+
+.education-delete-btn {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.education-delete-btn:hover {
+    background: #fee2e2;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.education-empty {
+    padding: 60px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed #d1d5db;
+    border-radius: 16px;
+}
+
+.education-empty-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #f3e8ff;
+    font-size: 30px;
+}
+
+.education-empty h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.education-empty p {
+    margin: 0 0 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .education-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .education-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .education-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .education-section {
+        padding: 25px 0 40px;
+    }
+
+    .education-container {
+        width: min(100% - 24px, 1200px);
+    }
+
+    .education-heading h1 {
+        font-size: 28px;
+    }
+
+    .education-card {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .education-timeline-dot {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .education-timeline-line {
+        top: 38px;
+    }
+
+    .education-content {
+        padding: 18px;
+    }
+
+    .education-card-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .education-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .education-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .education-actions {
+        width: 100%;
+    }
+
+    .education-edit-btn,
+    .education-delete-btn {
+        flex: 1;
+    }
+
+    .education-form-card {
+        padding: 20px;
+    }
+
+    .currently-studying-box {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .education-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .education-cancel-btn,
+    .education-save-btn {
+        width: 100%;
+    }
+
+}
