@@ -2928,6 +2928,701 @@ const ps = {
        DASHBOARD
     ===================================================== */
 
+         experience: {
+        management: "د پورټفولیو مدیریت",
+        work: "کاري",
+        title: "تجربه",
+        subtitle: "خپله مسلکي کاري تجربه او دندیزه سابقه مدیریت کړئ.",
+        close: "بندول",
+        addExperience: "تجربه اضافه کړئ",
+
+        totalExperience: "ټوله کاري تجربه",
+        currentPosition: "اوسنۍ دنده",
+        completed: "بشپړې شوې",
+
+        updateExperience: "د تجربې تازه کول",
+        createNew: "نوې تجربه",
+        editExperience: "تجربه سمول",
+        addNewExperience: "نوې تجربه اضافه کول",
+
+        formDescription: "د خپلې مسلکي کاري تجربې معلومات اضافه کړئ.",
+
+        company: "د شرکت نوم",
+        companyPlaceholder: "لکه: Google",
+
+        position: "د دندې عنوان / موقف",
+        positionPlaceholder: "لکه: Full Stack Developer",
+
+        location: "موقعیت",
+        locationPlaceholder: "لکه: کابل، افغانستان",
+
+        employmentType: "د دندې ډول",
+
+        fullTime: "بشپړ وخت",
+        partTime: "نیمه وخت",
+        freelance: "فریلانس",
+        contract: "قراردادي",
+        internship: "کارآموزي",
+
+        startDate: "د پیل نېټه",
+        endDate: "د پای نېټه",
+
+        currentJob: "زه اوس هم دلته کار کوم",
+        currentJobHelp:
+            "که دا ستاسې اوسنۍ دنده وي، دا انتخاب کړئ.",
+
+        status: "حالت",
+        active: "فعال",
+        inactive: "غیرفعال",
+
+        description: "د دندې تشریح",
+        descriptionPlaceholder:
+            "خپل مسؤلیتونه، لاسته راوړنې او هغه ټکنالوژۍ ولیکئ چې کار مو پرې کړی دی...",
+
+        cancel: "لغوه کول",
+        saving: "ذخیره کېږي...",
+        updateButton: "تجربه تازه کړئ",
+        saveButton: "تجربه ذخیره کړئ",
+
+        loading: "تجربې پورته کېږي...",
+
+        current: "اوسنۍ",
+        completedStatus: "بشپړه شوې",
+        present: "تر اوسه",
+
+        locationNotSpecified: "موقعیت نه دی مشخص شوی",
+        currentlyWorking: "اوس مهال کار کوي",
+        previousExperience: "مخکینۍ کاري تجربه",
+
+        edit: "سمول",
+        delete: "حذف کول",
+
+        noExperience: "تر اوسه کومه تجربه نشته",
+        noExperienceDescription:
+            "ستاسې په ډیټابیس کې تر اوسه هېڅ کاري تجربه نشته.",
+
+        failedLoad:
+            "د کاري تجربو په پورته کولو کې ستونزه رامنځته شوه.",
+
+        unableLoad:
+            "کاري تجربې پورته نه شوې. مهرباني وکړئ بیا هڅه وکړئ.",
+
+        requiredCompany:
+            "مهرباني وکړئ د شرکت نوم ولیکئ.",
+
+        requiredPosition:
+            "مهرباني وکړئ خپل د دندې موقف ولیکئ.",
+
+        requiredStartDate:
+            "مهرباني وکړئ د پیل نېټه وټاکئ.",
+
+        requiredEndDate:
+            "مهرباني وکړئ د پای نېټه وټاکئ یا د اوسنۍ دندې انتخاب فعال کړئ.",
+
+        invalidDate:
+            "د پای نېټه باید د پیل نېټې څخه مخکې نه وي.",
+
+        validationFailed:
+            "د معلوماتو تایید ناکام شو.",
+
+        failedSave:
+            "د کاري تجربې په ذخیره کولو کې ستونزه رامنځته شوه.",
+
+        savedNoData:
+            "تجربه ذخیره شوه، خو سرور هېڅ معلومات بېرته راونه لېږل.",
+
+        updatedSuccess:
+            "کاري تجربه په بریالیتوب سره تازه شوه.",
+
+        addedSuccess:
+            "کاري تجربه په بریالیتوب سره اضافه شوه.",
+
+        unableSave:
+            "کاري تجربه ذخیره نه شوه. مهرباني وکړئ بیا هڅه وکړئ.",
+
+        deleteConfirm:
+            "ایا تاسې ډاډه یاست چې دا کاري تجربه حذف کول غواړئ؟",
+
+        failedDelete:
+            "د کاري تجربې په حذف کولو کې ستونزه رامنځته شوه.",
+
+        unableDelete:
+            "کاري تجربه حذف نه شوه. مهرباني وکړئ بیا هڅه وکړئ.",
+
+        deletedSuccess:
+            "کاري تجربه په بریالیتوب سره حذف شوه.",
+
+        january: "جنوري",
+        february: "فبروري",
+        march: "مارچ",
+        april: "اپرېل",
+        may: "مې",
+        june: "جون",
+        july: "جولای",
+        august: "اګست",
+        september: "سپټمبر",
+        october: "اکټوبر",
+        november: "نومبر",
+        december: "ډسمبر",
+    },
+        skills: {
+    frontend: "فرانت‌اند",
+    backend: "بک‌اند",
+    database: "دیتابیس",
+    mobile: "موبایل",
+    tools: "ابزارها",
+    other: "سایر",
+
+    active: "فعال",
+    inactive: "غیرفعال",
+
+    failedFetch: "دریافت مهارت‌ها ناموفق بود.",
+    unableLoad:
+        "بارگذاری مهارت‌ها ممکن نشد. لطفاً دوباره تلاش کنید.",
+
+    requiredName: "نام مهارت الزامی است.",
+    requiredCategory: "دسته‌بندی مهارت الزامی است.",
+
+    validationFailed:
+        "لطفاً خطاهای فرم را اصلاح کنید.",
+
+    failedSave: "ذخیره مهارت ناموفق بود.",
+
+    unableSave:
+        "ذخیره مهارت ممکن نشد. لطفاً دوباره تلاش کنید.",
+
+    deleteConfirm:
+        "آیا مطمئن هستید که می‌خواهید این مهارت را حذف کنید؟",
+
+    failedDelete: "حذف مهارت ناموفق بود.",
+
+    unableDelete:
+        "حذف مهارت ممکن نشد. لطفاً دوباره تلاش کنید.",
+
+    management: "مدیریت مهارت‌ها",
+
+    title: "مهارت‌ها",
+
+    subtitle:
+        "مهارت‌های حرفه‌ای خود را از این بخش مدیریت کنید.",
+
+    close: "بستن",
+
+    addSkill: "افزودن مهارت",
+
+    updateSkill: "به‌روزرسانی مهارت",
+    createNew: "ایجاد جدید",
+
+    editSkill: "ویرایش مهارت",
+    addNewSkill: "افزودن مهارت جدید",
+
+    updateSkillDescription:
+        "اطلاعات مهارت حرفه‌ای خود را به‌روزرسانی کنید.",
+
+    addSkillDescription:
+        "یک مهارت حرفه‌ای جدید به پورتفولیوی خود اضافه کنید.",
+
+    skillName: "نام مهارت",
+
+    skillNamePlaceholder:
+        "نام مهارت را وارد کنید",
+
+    category: "دسته‌بندی",
+
+    skillLevel: "سطح مهارت",
+
+    icon: "آیکن",
+
+    iconPlaceholder:
+        "آیکن یا ایموجی را وارد کنید",
+
+    iconHelp:
+        "می‌توانید از ایموجی‌هایی مانند 💻، ⚛️، 🐍 و غیره استفاده کنید.",
+
+    status: "وضعیت",
+
+    description: "توضیحات",
+
+    descriptionPlaceholder:
+        "توضیح کوتاهی درباره این مهارت وارد کنید...",
+
+    cancel: "لغو",
+
+    saving: "در حال ذخیره...",
+
+    updateSkillButton: "به‌روزرسانی مهارت",
+
+    saveSkill: "ذخیره مهارت",
+
+    totalSkills: "مجموع مهارت‌ها",
+
+    activeSkills: "مهارت‌های فعال",
+
+    averageLevel: "سطح متوسط",
+
+    loading: "در حال بارگذاری...",
+
+    edit: "ویرایش",
+    delete: "حذف",
+
+    noSkillsFound: "هیچ مهارتی یافت نشد",
+
+    noSkillsDescription:
+        "شما هنوز هیچ مهارتی اضافه نکرده‌اید.",
+
+    addFirstSkill: "اولین مهارت خود را اضافه کنید",
+},
+
+     services: {
+    management: "د خدمتونو مدیریت",
+    title: "خدمتونه",
+    subtitle: "خپل مسلکي خدمتونه له یوه ځای څخه مدیریت کړئ.",
+
+    addService: "خدمت اضافه کړئ",
+
+    total: "ټول خدمتونه",
+    active: "فعال",
+    featured: "ځانګړي",
+    new: "نوي",
+
+    allServices: "ټول خدمتونه",
+    serviceList: "د خدمتونو لېست",
+
+    search: "خدمت ولټوئ...",
+    allStatus: "ټول حالتونه",
+
+    service: "خدمت",
+    category: "کټګوري",
+    features: "ځانګړنې",
+    price: "بیه",
+    status: "حالت",
+    actions: "کړنې",
+
+    edit: "سمول",
+    delete: "حذف",
+    refresh: "تازه کول",
+
+    statusNew: "نوی",
+    statusFeatured: "ځانګړی",
+    statusActive: "فعال",
+    statusInactive: "غیرفعال",
+
+    free: "وړیا",
+
+    noServices: "هیڅ خدمت ونه موندل شو",
+    noServicesDescription:
+        "د پیل لپاره خپل لومړی خدمت اضافه کړئ.",
+
+    loading: "خدمتونه لوډ کېږي...",
+
+    newService: "نوی خدمت",
+    updateLabel: "خدمت تازه کول",
+
+    editService: "خدمت سمول",
+
+    serviceTitle: "د خدمت نوم",
+    serviceTitlePlaceholder:
+        "د ویب پراختیا",
+
+    categoryPlaceholder:
+        "پراختیا",
+
+    pricePlaceholder:
+        "له ۱۰۰ ډالرو څخه پیل",
+
+    serviceColor:
+        "د خدمت رنګ",
+
+    cyan: "سایان",
+    purple: "ارغواني",
+    pink: "ګلابي",
+    green: "شنه",
+
+    icon: "آیکن",
+
+    featuresPlaceholder:
+        "Responsive Design, SEO, Fast Performance",
+
+    featuresHelp:
+        "ځانګړنې د کامې په وسیله سره جلا کړئ.",
+
+    description:
+        "توضیحات",
+
+    descriptionPlaceholder:
+        "د خدمت توضیحات ولیکئ...",
+
+    cancel: "لغوه",
+
+    saving: "خوندي کېږي...",
+
+    updateService:
+        "خدمت تازه کړئ",
+
+    close: "بندول",
+
+    failedLoad:
+        "د خدمتونو ترلاسه کول ناکام شول.",
+
+    unableLoad:
+        "د خدمتونو لوډ کول ممکن نه شول. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    requiredFields:
+        "مهرباني وکړئ ټول اړین معلومات ډک کړئ.",
+
+    failedSave:
+        "د خدمت خوندي کول ناکام شول.",
+
+    somethingWrong:
+        "یوه ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    updatedSuccess:
+        "خدمت په بریالیتوب سره تازه شو.",
+
+    addedSuccess:
+        "خدمت په بریالیتوب سره اضافه شو.",
+
+    deleteConfirm:
+        "ایا تاسو ډاډه یاست چې غواړئ دا خدمت حذف کړئ؟",
+
+    failedDelete:
+        "د خدمت حذف کول ناکام شول.",
+
+    unableDelete:
+        "د خدمت حذف کول ممکن نه شول. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    deletedSuccess:
+        "خدمت په بریالیتوب سره حذف شو.",
+},
+     projects: {
+    management: "د پروژو مدیریت",
+    title: "پروژې",
+    subtitle: "له دې ځای څخه خپلې پورټفولیو پروژې مدیریت کړئ.",
+
+    total: "ټولې پروژې",
+
+    newProject: "نوې پروژه",
+    addProject: "پروژه اضافه کړئ",
+
+    projectTitle: "د پروژې نوم",
+    category: "کټګوري",
+    categoryPlaceholder: "د مدیریت سیسټم",
+
+    technologies: "ټکنالوژۍ",
+
+    status: "حالت",
+    statusNew: "نوې",
+    statusFeatured: "ځانګړې",
+    statusCompleted: "بشپړه شوې",
+    statusCurrent: "اوسنۍ",
+    statusInProgress: "د پرمختګ په حال کې",
+
+    icon: "آیکن",
+
+    projectColor: "د پروژې رنګ",
+    cyan: "سایان",
+    purple: "ارغواني",
+    pink: "ګلابي",
+
+    liveUrl: "ژوندۍ لینک",
+    githubUrl: "GitHub لینک",
+
+    description: "توضیحات",
+    descriptionPlaceholder:
+        "د پروژې توضیحات ولیکئ...",
+
+    addProjectButton: "+ پروژه اضافه کړئ",
+    saving: "خوندي کېږي...",
+
+    allProjects: "ټولې پروژې",
+    projectList: "د پروژو لېست",
+
+    search: "پروژه ولټوئ...",
+    allStatus: "ټول حالتونه",
+
+    project: "پروژه",
+    live: "ژوندۍ",
+    github: "GitHub",
+    action: "کړنه",
+
+    view: "کتل",
+    delete: "حذف",
+
+    loading: "پروژې لوډ کېږي...",
+    noProjects: "هیڅ پروژه ونه موندل شوه.",
+
+    failedLoad:
+        "د پروژو ترلاسه کول ناکام شول.",
+
+    unableLoad:
+        "د پروژو لوډ کول ممکن نه شول. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    requiredFields:
+        "مهرباني وکړئ ټول اړین معلومات ډک کړئ.",
+
+    failedAdd:
+        "د پروژې اضافه کول ناکام شول.",
+
+    somethingWrong:
+        "یوه ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    addedSuccess:
+        "پروژه په بریالیتوب سره اضافه شوه.",
+
+    deleteConfirm:
+        "ایا تاسو ډاډه یاست چې غواړئ دا پروژه حذف کړئ؟",
+
+    failedDelete:
+        "د پروژې حذف کول ناکام شول.",
+
+    unableDelete:
+        "د پروژې حذف کول ممکن نه شول. مهرباني وکړئ بیا هڅه وکړئ.",
+
+    deletedSuccess:
+        "پروژه په بریالیتوب سره حذف شوه.",
+},
+ certifications: {
+    loadFailed: "د سندونو په بارولو کې ستونزه رامنځته شوه.",
+    loadError: "د سندونو معلومات نه شي پورته کېدای.",
+
+    nameRequired: "مهرباني وکړئ د سند نوم ولیکئ.",
+     organizationRequired: "مهرباني وکړئ د صادرونکې ادارې نوم ولیکئ.",
+     issueDateRequired: "مهرباني وکړئ د صادرېدو نېټه وټاکئ.",
+     expiryDateRequired:
+         "مهرباني وکړئ د پای نېټه وټاکئ یا د پای نېټه نه لري انتخاب کړئ.",
+     expiryBeforeIssue:
+         "د پای نېټه د صادرېدو له نېټې مخکې نه شي کېدای.",
+
+     urlProtocol:
+         "د اعتبار URL باید له http:// یا https:// څخه پیل شي.",
+     invalidUrl:
+       "د اعتبار URL باید یو معتبر URL وي.",
+
+     saveFailed: "د سند په خوندي کولو کې ستونزه رامنځته شوه.",
+    saveError: "د سند د خوندي کولو پر مهال ستونزه رامنځته شوه.",
+
+   updatedSuccess: "سند په بریالیتوب سره تازه شو!",
+    addedSuccess: "سند په بریالیتوب سره اضافه شو!",
+
+     deleteConfirm:
+         "ایا ډاډه یاست چې دا سند حذف کړئ؟",
+     deleteFailed:
+         "د سند په حذف کې ستونزه رامنځته شوه.",
+     deleteError:
+         "سند نه شي حذف کېدای.",
+     deletedSuccess:
+         "سند په بریالیتوب سره حذف شو!",
+
+     notAvailable: "موجود نه دی",
+
+     portfolioManagement:
+         "د پورټفولیو مدیریت",
+
+     my: "زما",
+
+    certifications:
+         "سندونه",
+
+     manageDescription:
+         "خپل مسلکي سندونه او لاسته راوړنې مدیریت کړئ.",
+
+     addCertification:
+         "سند اضافه کړئ",
+
+     totalCertifications:
+         "ټول سندونه",
+
+    noExpiration:
+         "د پای نېټه نه لري",
+
+    updateCertification:
+         "د سند تازه کول",
+
+    createNew:
+         "نوی جوړول",
+
+     editCertification:
+        "سند سمول",
+
+    addNewCertification:
+         "نوی سند اضافه کول",
+
+    enterInformation:
+       "لاندې د خپل سند معلومات ولیکئ.",
+
+    certificationName:
+         "د سند نوم",
+
+    namePlaceholder:
+         "لکه: React Developer Certification",
+
+    issuingOrganization:
+       "صادرونکې اداره",
+
+     organizationPlaceholder:
+         "لکه: Microsoft",
+
+     credentialId:
+         "د سند پېژندپاڼه",
+
+     credentialIdPlaceholder:
+         "لکه: ABC-123456",
+
+     credentialUrl:
+         "د سند URL",
+
+     credentialUrlPlaceholder:
+         "https://example.com/credential",
+
+     issueDate:
+         "د صادرېدو نېټه",
+
+     issueDateHelp:
+         "د سند د صادرېدو نېټه وټاکئ.",
+
+     expiryDate:
+         "د پای نېټه",
+
+     expiryDateHelp:
+         "که سند د پای نېټه لري، د پای نېټه وټاکئ.",
+
+     noExpirationLabel:
+         "دا سند د پای نېټه نه لري",
+
+     noExpirationHelp:
+         "که ستاسې سند د پای نېټه نه لري، دا انتخاب فعال کړئ.",
+
+     expired:
+         "ختم شوی",
+
+     descriptionPlaceholder:
+         "د خپل سند په اړه لنډه تشریح ولیکئ...",
+     updateCertificationButton:
+         "سند تازه کړئ",
+
+    saveCertification:
+         "سند خوندي کړئ",
+
+     loading:
+         "سندونه لوډېږي...",
+
+     loadingDescription:
+         "مهرباني وکړئ، تر هغه وخته انتظار وکړئ چې سندونه لوډ شي.",
+
+     issued:
+         "صادر شوی",
+
+     expires:
+         "پای",
+
+     viewCredential:
+         "سند وګورئ",
+
+     noCredentialUrl:
+         "د سند URL نشته",
+
+    deleting:
+        "حذف کېږي...",
+
+     noCertificationsFound:
+        "هیڅ سند ونه موندل شو",
+
+    emptyDescription:
+        "خپل لومړی مسلکي سند اضافه کړئ.",
+
+     january: "جنوري",
+     february: "فبروري",
+     march: "مارچ",
+     april: "اپرېل",
+     may: "مې",
+     june: "جون",
+     july: "جولای",
+     august: "اګست",
+     september: "سپټمبر",
+     october: "اکتوبر",
+     november: "نومبر",
+     december: "دسمبر",
+ },
+ common: {
+     close: "بندول",
+     active: "فعال",
+     status: "حالت",
+     description: "تشریح",
+    cancel: "لغوه کول",
+     saving: "خوندي کېږي...",
+     edit: "سمول",
+     delete: "حذف",
+ },
+
+ messages: {
+    communicationCenter: "د اړیکو مرکز",
+    my: "زما",
+    messages: "پیغامونه",
+    description:
+        "ستاسو له Portfolio څخه ترلاسه شوي پیغامونه او غوښتنې مدیریت کړئ.",
+
+    totalMessages: "ټول پیغامونه",
+    unread: "نا لوستي",
+    read: "لوستل شوي",
+    starred: "ستوري لرونکي",
+
+    searchPlaceholder:
+        "پیغامونه ولټوئ...",
+
+    filter: "فلټر:",
+
+    allMessages: "ټول پیغامونه",
+
+    loading: "پیغامونه لوډ کېږي...",
+    loadingDescription:
+        "مهرباني وکړئ انتظار وکړئ، پیغامونه له Database څخه لوډ کېږي.",
+
+    unknown: "نامعلوم",
+    noSubject: "موضوع نشته",
+    noMessage: "د پیغام متن نشته.",
+
+    view: "کتل",
+
+    markRead: "لوستل شوی وټاکئ",
+    markUnread: "نا لوستی وټاکئ",
+
+    updating: "تازه کېږي...",
+    deleting: "حذف کېږي...",
+
+    delete: "حذف",
+    close: "بندول",
+
+    noMessages: "هیڅ پیغام ونه موندل شو",
+
+    noMessagesDescription:
+        "ستاسو د لټون یا فلټر مطابق هیڅ پیغام نشته.",
+
+    clearFilters: "فلټرونه پاک کړئ",
+
+    messageDetails: "د پیغام معلومات",
+
+    date: "نېټه",
+    time: "وخت",
+    status: "حالت",
+    message: "پیغام",
+
+    confirmDelete:
+        "ایا تاسو ډاډه یاست چې غواړئ دا پیغام حذف کړئ؟",
+
+    errors: {
+        loadFailed:
+            "د پیغامونو په لوډ کولو کې ستونزه رامنځته شوه.",
+
+        updateFailed:
+            "د پیغام په تازه کولو کې ستونزه رامنځته شوه.",
+
+        starFailed:
+            "د ستوري په تازه کولو کې ستونزه رامنځته شوه.",
+
+        deleteFailed:
+            "د پیغام په حذف کولو کې ستونزه رامنځته شوه.",
+    },
+},
     dashboard: {
         adminDashboard:
             "اداري ډشبورډ",
